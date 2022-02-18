@@ -1,0 +1,187 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html, body {
+    height: 100%;
+    line-height: 1;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+}
+
+
+
+/*================================*/
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: 1420px;
+    margin: 0px auto;
+    min-height: 100%;
+}
+
+/*============Header==============*/
+
+.header__container {
+    display: flex;
+    max-width: 1070px;
+    min-height: 90px;
+    align-items: center;
+    margin: 0 186px 0px 184px;
+
+}
+
+.header__logo {
+    flex: 0 1 199.48px;
+    margin-top: 40.98px;
+}
+
+.header__menu {
+    flex: 1 1 auto;
+    max-width: 660px;
+}
+
+.menu__body {
+}
+
+.menu__list {
+    display: flex;
+    justify-content: flex-end;
+    margin: 44px 158px 0px 173px;
+}
+
+
+.menu__item:not(:first-child) {
+    margin-left: 49px;
+}
+
+.menu__link {
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 15px;
+    line-height: 20px;
+    color: #696871;
+}
+
+.menu__link:hover {
+    color:#19191B;
+    border-bottom: 2px solid #5454D4;
+    padding-bottom: 10px;
+}
+
+.header__button {
+    flex: 0 1 215px;
+}
+
+.button {
+    display: block;
+    padding: 19px;
+    border-radius: 10px;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 17px;
+    line-height: 22px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.button__orange {
+    background-color: #FF7143;
+    margin-top: 30px;
+}
+
+/*================MAIN=====================*/
+
+.main{
+
+}
+
+/*==============GROW-BUSINESS==============*/
+
+.grow-business {
+}
+
+.grow-business__container {
+    display: flex;
+    align-items: center;
+    max-width: 1146px;
+    margin: 100px 110px 0px 184px;
+}
+
+.grow-business__content {
+    flex: 0 0 459px;
+}
+
+.grow-business__empty{
+    flex: 1 1 74px;
+}
+
+.grow-business__image {
+}
+
+.grow-business__title {
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 80px;
+    line-height: 77px;
+    letter-spacing: -2.50105px;
+    color: #19191B;
+}
+
+.grow-business__text {
+    margin-top: 30px;
+    font-family: Mulish, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.625263px;
+    color: #696871;
+}
+
+.grow-business__button {
+    display: flex;
+    margin-top: 50px;
+}
+
+.button__blue {
+    flex: 1 1 211px;
+    background-color: #5454D4;
+    max-width: 211px;
+}
+
+.grow-business__arrow-down {
+    flex: 1 1 auto;
+    margin-left: 40px;
+}
+
+
