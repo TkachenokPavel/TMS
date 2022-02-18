@@ -137,9 +137,6 @@ body {
 
 /*==============SECTION 1===========*/
 
-.section-grow {
-
-}
 
 .section-grow__container {
     display: flex;
@@ -154,8 +151,6 @@ body {
     padding-top: 70px;
 }
 
-.content {
-}
 
 .content__title {
     font-family: inherit;
