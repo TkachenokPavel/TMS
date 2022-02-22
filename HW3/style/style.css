@@ -1,3 +1,306 @@
-body{
+/* Обнуление */
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html, body {
+    height: 100%;
+    line-height: 1;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #000000;
+}
+
+/*------------------------------*/
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+[class*="__container"] {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+/* ===========HEADER============= */
+
+.header-section1 {
+    width: 100%;
+    /* min-height: 1026px; */
+    background-image: linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)), url(/HW3/image/bg-axit.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: #000;
-}}
+}
+
+.header__container {
+    display: flex;
+    justify-content:space-between;
+    min-height: 75px;
+}
+
+.header__logo {
+    margin-left: -54.72px;
+}
+
+@media (max-width: 1310px) {
+    .header__logo {
+        margin-left: 0;
+    }
+}
+
+.header__nav {
+    min-width: 570px;
+}
+
+
+.menu__list {
+    display: flex;
+    height: 100%;
+    width: 570px;
+    height: 75px;
+}
+
+.menu__item {
+    width: 114px;
+    text-align: center;
+
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.77rem;
+    line-height: 1.05rem;
+
+}
+
+.menu__item:hover {
+    background-color: #EC7979;
+}
+.menu__item:active {
+    background-color: #AB4949;
+}
+
+.menu__link {
+    display: inline-block;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    width: 100%;
+}
+
+
+/* ==============SECTION 1=========== */
+
+.axit__container {
+    display: flex;
+    margin-top: 100px;
+    min-height: 925px;
+}
+
+.axit__content {
+    flex-basis: 59.8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 183px 0px;
+    height: 100%;
+}
+
+.axit__logo {
+    padding-bottom: 50.88px;
+    width: 270px;
+}
+
+.axit__title {
+    padding-right: 30px;
+    padding-bottom: 55.12px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.6rem;
+    line-height: 3.5rem;
+    align-items: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+hr {
+    width: 170px;
+    color: #fff; 
+    background-color:#fff; 
+    border:0px none;
+    height:1px; 
+}
+
+.axit__text {
+    padding: 42px 430px 42px 0px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.16rem;
+    color: #fff;
+}
+
+.button {
+    display: inline-block;
+    width: 270px;
+    padding: 8px;
+    color: #fff;
+    border: 2px solid #fff;
+
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.axit__button:hover {
+    color:#EC7979;
+    border-color: #EC7979;
+}
+.axit__button:active {
+    color:#fff;
+    border-color: #AB4949;
+    background-color: #AB4949;
+}
+
+.axit-form__box {
+    flex-basis: 40.2%;
+    padding: 183px 0px;
+}
+
+.axit-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 450px;
+    min-width: 100%;
+
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.axit-form__title {
+    height: 90px;
+    padding: 28.5px 0px; 
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.33rem;
+    line-height: 1.83rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.axit-form__title span {
+    color: #EC7979;
+}
+
+.axit-form__inputs {
+    padding-top: 45px;
+    padding-bottom: 75px;
+}
+
+.axit-form__inputs [type="text"] {
+    width: 370px;
+    height: 38px;
+    margin: 0 50px;
+    margin-bottom: 33px;
+    padding: 0 0 15px 0;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.axit-form__inputs [type="email"] {
+    width: 370px;
+    height: 38px;
+    margin: 0 50px;
+    margin-bottom: 33px;
+    padding: 0 0 15px 0;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.axit-form__inputs [type="password"] {
+    width: 370px;
+    height: 38px;
+    margin: 0 50px;
+    padding: 0 0 15px 0;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.axit-form__button {
+    cursor: pointer;
+    width: 100%;
+    min-height: 60px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #EC7979;
+
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.83rem;
+    line-height: 1.11rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.axit-form__button:hover {
+    background-color: #AB4949;
+}
+
+.axit-form__button:active {
+    background-color: #EC7979;
+}
