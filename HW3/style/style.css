@@ -255,8 +255,7 @@ hr {
 .axit-form__inputs [type="text"] {
     width: 370px;
     height: 38px;
-    margin: 0 50px;
-    margin-bottom: 33px;
+    margin: 0 50px 33px 50px;
     padding: 0 0 15px 0;
     border: none;
     border-bottom: 1px solid #BDBDBD;
@@ -265,8 +264,7 @@ hr {
 .axit-form__inputs [type="email"] {
     width: 370px;
     height: 38px;
-    margin: 0 50px;
-    margin-bottom: 33px;
+    margin: 0 50px 33px 50px;
     padding: 0 0 15px 0;
     border: none;
     border-bottom: 1px solid #BDBDBD;
@@ -329,7 +327,7 @@ hr {
     height: 60px;
     display: flex;
     align-items: center;
-    font-family: "Open Sans". sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 1.33rem;
