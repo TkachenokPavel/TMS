@@ -1,0 +1,50 @@
+/* ==============SECTION-SOCIALS============== */
+
+.social {
+    background-color: #F8EFEF;
+    min-height: 140px;
+}
+
+.socials__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.socials__content {
+    flex: 1 1 43%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+.socials__subtitle {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.33rem;
+    line-height: 1.83rem;
+    text-transform: capitalize;
+    color: #333333;
+}
+
+.socials__text {
+    padding-bottom: 18px;
+
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.16rem;
+    color: #86878B;
+}
+
+.social__icons {
+    flex: 1 1 57%;
+    min-height: 140px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
