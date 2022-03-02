@@ -2,7 +2,6 @@
 
 .header-section1 {
     width: 100%;
-    /* min-height: 1026px; */
     background-image: linear-gradient(rgba(0,0,0,0.5),
     rgba(0,0,0,0.5)), url(/image/bg-axit.jpg);
     background-repeat: no-repeat;
