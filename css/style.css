@@ -1,0 +1,12 @@
+/* Base */
+@import url(./base/reset.css);
+@import url(./base/base.css);
+
+/*Blocks*/
+@import url(./blocks/header.css);
+@import url(./blocks/socials.css);
+@import url(./blocks/tabs.css);
+@import url(./blocks/awesome.css);
+@import url(./blocks/pricing.css);
+
+
