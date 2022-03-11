@@ -143,11 +143,11 @@ hr {
     text-transform: capitalize;
 }
 
-.axit__button:hover {
+.button:hover {
     color:#EC7979;
     border-color: #EC7979;
 }
-.axit__button:active {
+.button:active {
     color:#fff;
     border-color: #AB4949;
     background-color: #AB4949;
