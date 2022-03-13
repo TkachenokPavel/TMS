@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 0 64px 0;;
+    padding: 50px 15px 64px 15px;
 }
 
 .customers__title {
@@ -21,11 +21,10 @@
 }
 
 .customers__subtitle {
-    padding-top: 40px;
     color: #86878B;
 }
 
-.sustomers__reviews {
+.customers__reviews {
     width: 100%;
     padding-top: 83px;
     display: flex;
@@ -34,6 +33,9 @@
 
 .reviews__box {
     max-width: 370px;
+}
+.reviews__box:nth-child(2) {
+    margin: 0 20px;
 }
 
 .reviews__comment {
@@ -79,8 +81,34 @@
 
 .information__name {
     padding-bottom: 15px;
-    line-height: 54px;
+    min-height: 54px;
 }
 
 .managers__position {
+}
+
+
+@media screen and (max-width:1024px) {
+    .customers__title {
+        min-height: 120px;
+    }
+
+    .customers__line {
+        padding-bottom: 32px;
+    }
+
+    .customers__reviews {
+        padding-top: 32px;
+    }
+
+    .reviews__box img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .information__name {
+        min-height: 36px;
+        padding-bottom: 0;
+        margin-bottom: 10px;
+    }
 }
