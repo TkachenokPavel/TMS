@@ -19,7 +19,6 @@
 }
 
 .awesome__line {
-    min-height: 40px;
     width: 170px;
     border-bottom: 1px solid #EC7979;
 }
@@ -43,8 +42,9 @@
 }
 
 .card__box {
-    flex-basis: 31%;
+    flex-grow: 1;
     min-width: 280px;
+    max-width: 32%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,4 +73,38 @@
     font-size: 1rem;
     line-height: 1.16rem;
     color: #000000;
+}
+
+
+@media screen and (max-width:1024px) {
+    .awesome__title {
+        min-height: 120px;
+    }
+
+    .awesome__line {
+        min-height: 0;
+    }
+
+    .awesom__subtitle {
+        padding: 32px 0;
+    }
+
+    .card__box img {
+        width: 147px;
+        height: 147px;
+    }
+
+    .card__caption {
+        min-height: 82px;
+        margin-bottom: 9px;
+    }
+
+    .card__text {
+        width: 98%;
+        min-height: 80px;
+    }
+
+    .card__text br:nth-child(n+3) {
+        display: none;
+    }
 }
