@@ -101,3 +101,37 @@
     background-color: #EC7979;
 }
 
+@media screen and (max-width:1024px) {
+    .tabs__content-box {
+    margin: 0 26px 0 83px;
+    }
+
+    .content-box__subtitle {
+        min-height: 89px;
+        margin-bottom: 38px;
+    }
+
+    .tabs__content-box br {
+        display: none;
+    }
+
+    .content-box__text {
+        min-height: 112px;
+        padding-bottom: 38px;
+    }
+
+    .tabs__content-box p:first-child {
+        padding-bottom: 20px;
+    }
+
+    .content-box__button {
+        width: 231px;
+        font-size: 1.28rem;
+    }
+
+    .tabs__content img {
+        max-width: 399px;
+        max-height: 385px;
+        height: 100%;
+    }
+}
