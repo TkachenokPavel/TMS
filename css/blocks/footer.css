@@ -29,3 +29,15 @@
     padding-bottom: 27px;
     color: #ffffff80;;
 }
+
+
+@media screen and (max-width:1024px) {
+    .footer__icons img{
+        width: 45px;
+        height: 45px;
+    }
+
+    .footer__img:not(:last-child) {
+        margin-right: 27px;
+    }
+}
