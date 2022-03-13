@@ -83,3 +83,24 @@
 .contact-us-form__button:active {
     background-color: #EC7979;
 }
+
+
+
+@media screen and (max-width:1024px) {
+    .contact-us__title {
+        line-height: 120px;
+    }
+
+    .contact-us__line {
+        padding-bottom: 32px;
+    }
+
+    .contact-us__subtitle {
+        padding-bottom: 72px;
+    }
+
+    .contact-us-form__button {
+        width: 318px;
+        font-size: 18px;
+    }
+}
