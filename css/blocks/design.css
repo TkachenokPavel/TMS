@@ -36,3 +36,23 @@
     margin-bottom: 50px;
     text-align: center;
 }
+
+
+@media screen and (max-width:1024px) {
+    .design__title {
+        line-height: 120px;
+    }
+
+    .design__line {
+        padding-bottom: 32px;
+    }
+
+    .design__subtitle {
+        padding-bottom: 32px;
+    }
+
+    .design__button {
+        width: 318px;
+        font-size: 18px;
+    }
+}
