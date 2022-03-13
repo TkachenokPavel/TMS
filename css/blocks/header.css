@@ -6,7 +6,6 @@
     rgba(0,0,0,0.5)), url(../../image/bg-axit.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -103,7 +102,7 @@
 .axit__title {
     padding-right: 30px;
     padding-bottom: 55.12px;
-
+    width: 85%;
     align-items: center;
     color: #FFFFFF;
 }
@@ -192,33 +191,17 @@ hr {
     padding-bottom: 75px;
 }
 
-.axit-form__inputs [type="text"] {
+.axit-form__inputs input {
     width: 370px;
     height: 38px;
     margin: 0 50px;
-    margin-bottom: 33px;
     padding: 0 0 15px 0;
     border: none;
     border-bottom: 1px solid #BDBDBD;
 }
 
-.axit-form__inputs [type="email"] {
-    width: 370px;
-    height: 38px;
-    margin: 0 50px;
+.axit-form__inputs input:not(:last-child) {
     margin-bottom: 33px;
-    padding: 0 0 15px 0;
-    border: none;
-    border-bottom: 1px solid #BDBDBD;
-}
-
-.axit-form__inputs [type="password"] {
-    width: 370px;
-    height: 38px;
-    margin: 0 50px;
-    padding: 0 0 15px 0;
-    border: none;
-    border-bottom: 1px solid #BDBDBD;
 }
 
 .axit-form__button {
@@ -243,4 +226,74 @@ hr {
 
 .axit-form__button:active {
     background-color: #EC7979;
+}
+
+/*-----Adaptive----*/
+
+@media screen and (max-width: 1024px) {
+    :root {
+        font-size: 14px;
+    }
+
+    .header-section1 {
+        max-height: 769px;
+        }
+
+    .header__container {
+        max-width: 920px;
+        margin: 0 20px 0 auto;
+    }
+
+    .menu__item {
+        font-size: 1rem;
+    }
+    
+    .axit__container {
+        max-width: 920px;
+        margin: 0 0 0 auto;
+    }
+
+    .axit__content {
+        max-width: 55%;
+    }
+
+    .axit__logo {
+        padding-bottom: 37px;
+    }
+
+    .axit__logo img{
+        width: 183px;
+    }
+
+    .axit__title {
+        width: 100%;
+        padding-bottom: 41px;
+        pr0
+    }
+
+    .axit__text {
+        width: 50%;
+        padding: 31px 0;
+    }
+
+    .axit-form__box {
+        flex-grow: 1;
+        width: 45%;
+    }
+
+    .axit__button {
+        width: 183px;
+    }
+
+    .axit-form__inputs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .axit-form__inputs input {
+        width: 90%;
+        margin: 0;
+    }
 }
