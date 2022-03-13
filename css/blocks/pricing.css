@@ -126,3 +126,36 @@
     color: #86878B;
 
 }
+
+
+@media screen and (max-width:1024px) {
+    .pricing__title {
+        min-height: 120px;
+    }
+
+    .pricing__line  {
+        padding-bottom: 32px;
+    }
+
+    .pricing__subtitle {
+        margin-bottom: 50px;
+    }
+    .pricing__card-box {
+    }
+
+    .pricing__card-subtitle {
+        min-height: 53px;
+    }
+
+    .priccing__card-price {
+        min-height: 89px;
+    }
+
+    .pricing__card-text {
+        min-height: 44px;
+    }
+
+    .pricing__card-option {
+        min-height: 44px;
+    }
+}
