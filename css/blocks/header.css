@@ -1,0 +1,396 @@
+/* ===========HEADER============= */
+
+.header-section1 {
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)), url(../../image/bg-axit.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+}
+
+.header__container {
+    display: flex;
+    justify-content:space-between;
+    min-height: 75px;
+}
+
+.header__logo {
+    margin-left: -54.72px;
+}
+
+@media (max-width: 1310px) {
+    .header__logo {
+        margin-left: 0;
+    }
+}
+
+.header__nav {
+    min-width: 570px;
+}
+
+
+.menu__list {
+    display: flex;
+    height: 100%;
+    width: 570px;
+    height: 75px;
+}
+
+.menu__item {
+    width: 114px;
+    text-align: center;
+
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.77rem;
+    line-height: 1.05rem;
+
+}
+
+.menu__item:hover {
+    background-color: #EC7979;
+}
+.menu__item:active {
+    background-color: #AB4949;
+}
+
+.menu__link {
+    display: inline-block;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    width: 100%;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+
+/* ==============SECTION 1=========== */
+
+.axit__container {
+    display: flex;
+    margin-top: 100px;
+    min-height: 925px;
+}
+
+.axit__content {
+    flex-basis: 59.8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 183px 0px;
+    height: 100%;
+}
+
+.axit__logo {
+    padding-bottom: 50.88px;
+    width: 270px;
+}
+
+.axit__title {
+    padding-right: 30px;
+    padding-bottom: 55.12px;
+    width: 85%;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+hr {
+    width: 170px;
+    color: #fff; 
+    background-color:#fff; 
+    border:0px none;
+    height:1px; 
+}
+
+.axit__text {
+    padding: 42px 430px 42px 0px;
+
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1.16rem;
+    color: #fff;
+}
+
+.button {
+    display: inline-block;
+    width: 270px;
+    padding: 8px;
+    color: #fff;
+    border: 2px solid #fff;
+
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.button:hover {
+    color:#EC7979;
+    border-color: #EC7979;
+}
+.button:active {
+    color:#fff;
+    border-color: #AB4949;
+    background-color: #AB4949;
+}
+
+.axit-form__box {
+    flex-basis: 40.2%;
+    padding: 183px 0px;
+}
+
+.axit-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 450px;
+    min-width: 100%;
+
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.axit-form__title {
+    height: 90px;
+    padding: 28.5px 0px; 
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.33rem;
+    line-height: 1.83rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.axit-form__title span {
+    color: #EC7979;
+}
+
+.axit-form__inputs {
+    padding-top: 45px;
+    padding-bottom: 75px;
+}
+
+.axit-form__inputs input {
+    width: 370px;
+    height: 38px;
+    margin: 0 50px;
+    padding: 0 0 15px 0;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.axit-form__inputs input:not(:last-child) {
+    margin-bottom: 33px;
+}
+
+.axit-form__button {
+    cursor: pointer;
+    width: 100%;
+    min-height: 60px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #EC7979;
+
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.83rem;
+    line-height: 1.11rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.axit-form__button:hover {
+    background-color: #AB4949;
+}
+
+.axit-form__button:active {
+    background-color: #EC7979;
+}
+
+/*-----Adaptive----*/
+
+@media screen and (max-width: 1024px) {
+    :root {
+        font-size: 14px;
+    }
+
+    .header-section1 {
+        max-height: 769px;
+        }
+
+    .header__container {
+        max-width: 920px;
+        margin: 0 20px 0 auto;
+    }
+
+    .menu__item {
+        font-size: 1rem;
+    }
+    
+    .axit__container {
+        max-width: 920px;
+        margin: 0 0 0 auto;
+    }
+
+    .axit__content {
+        max-width: 55%;
+    }
+
+    .axit__logo {
+        padding-bottom: 37px;
+    }
+
+    .axit__logo img{
+        width: 183px;
+    }
+
+    .axit__title {
+        width: 100%;
+        padding-bottom: 41px;
+    }
+
+    .axit__text {
+        width: 50%;
+        padding: 31px 0;
+    }
+
+    .axit-form__box {
+        flex-grow: 1;
+        width: 45%;
+    }
+
+    .axit__button {
+        width: 183px;
+    }
+
+    .axit-form__inputs {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .axit-form__inputs input {
+        width: 90%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__nav {
+        max-width: 570px;
+        min-width: 0;
+    }
+
+    .menu__item {
+        width: 100%;
+    }
+
+    .axit-form__inputs {
+        padding-top: 25px;
+        padding-bottom: 45px;
+    }
+
+    .axit-form {
+        height: 400px;
+    }
+
+    .menu-btn {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    
+    .menu-btn > span,
+    .menu-btn > span::before,
+    .menu-btn > span::after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #ffffff;
+      transition-duration: .25s;
+    }
+    
+    .menu-btn > span::before {
+        content: '';
+        top: -8px;
+      }
+    
+    .menu-btn > span::after {
+        content: '';
+        top: 8px;
+      }
+    
+    .menu__list {
+      display: block;
+      position: fixed;
+      visibility: hidden;
+      top: 0;
+      right: -100%;
+      width: 300px;
+      height: 100%;
+      margin: 0;
+      padding: 80px 0;
+      list-style: none;
+      background-color: #000000;
+      box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+      transition-duration: .25s;
+    }
+    
+    #menu-toggle{
+        display: inline-block;
+        opacity: 0;
+    }
+    
+    #menu-toggle:checked ~ .menu-btn > span{
+        transform: rotate(45deg);
+    }
+    
+    #menu-toggle:checked ~ .menu-btn > span::before{
+        top: 0;
+        transform: rotate(0);
+    }
+    
+    #menu-toggle:checked ~ .menu-btn > span::after{
+        top: 0;
+        transform: rotate(90deg);
+    }
+    
+    #menu-toggle:checked ~ .menu__list{
+        visibility: visible;
+        right: 0;
+    }
+}
+
