@@ -135,3 +135,29 @@
         height: 100%;
     }
 }
+
+
+@media screen and (max-width:768px) {
+    .tabs__content {
+        display: block;
+        margin: 0;
+        padding: 0 15%;
+    }
+
+    .content-box__subtitle {
+        justify-content: center;
+    }
+
+    .content-box__button {
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .tabs__content-box {
+        margin: 0;
+    }
+
+    .tabs__content img {
+        display: none;
+    }
+}
