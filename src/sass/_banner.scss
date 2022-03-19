@@ -1,0 +1,231 @@
+.banner {
+    min-height: 1024px;
+    background-image: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%), url(../img/header-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media  screen and (max-width: 1024px) {
+        min-height: 695px;
+    }
+
+    @media  screen and (max-width: 768px) {
+        min-height: 600px;
+    }
+
+    @media  screen and (max-width: 576px) {
+        min-height: 550px;
+    }
+
+    &__container {
+        padding-top: 177px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media  screen and (max-width: 1024px) {
+            padding-top: 120px;
+        }
+
+        @media  screen and (max-width: 768px) {
+            padding-top: 100px;
+        }
+
+        @media  screen and (max-width: 576px) {
+            padding-top: 80px;
+        }
+    }
+
+    &__subtitle {
+        height: 80px;
+        font-family: "Kaushan Script", cursive;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 4rem;
+        text-align: center;
+        color: $white-color;
+
+        @media  screen and (max-width: 1024px) {
+            height: 54px;
+        }
+
+        @media  screen and (max-width: 768px) {
+            height: 45px;
+            font-size: 3rem;
+        }
+
+        @media  screen and (max-width: 576px) {
+            height: 35px;
+            font-size: 2.3rem;
+        }
+    }
+
+    &__title {
+        width: 90%;
+        height: 370px;
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 9rem;
+        line-height: 11rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white-color;
+
+        @media  screen and (max-width: 1024px) {
+            height: 250px;
+            width: 68%;
+            font-size: 6.5rem;
+            line-height: 1.2;
+        }
+
+        @media  screen and (max-width: 768px) {
+            width: 80%;
+            height: 180px;
+            font-size: 4.5rem;
+        }
+
+        @media  screen and (max-width: 576px) {
+            width: 85%;
+            height: 140px;
+            font-size: 3.5rem;
+        }
+    }
+
+    &__line {
+        margin-top: 44px;
+        width: 170px;
+        height: 72px;
+        border-top: 4px solid $white-color;
+
+        @media  screen and (max-width: 1024px) {
+            margin-top: 0;
+            height: 78px;
+        }
+    }
+}
+
+.actions-banner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 280px;
+
+    @media  screen and (max-width: 1024px) {
+        height: 190px;
+    }
+
+    @media  screen and (max-width: 576px) {
+        height: 250px;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 370px;
+        height: 80px;
+        border: 4px solid $white-color;
+        color: $white-color;
+
+        @media  screen and (max-width: 1024px) {
+            width: 318px;
+            height: 55px;
+        }
+
+        @media  screen and (max-width: 1024px) {
+            width: 215px;
+            height: 45px;
+        }
+
+        span {
+            font-family: "Raleway", sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.5rem;
+            line-height: 1.75rem;
+            text-transform: uppercase;
+
+            @media  screen and (max-width: 1024px) {
+                font-size: 1.3rem;
+            }
+
+            @media  screen and (max-width: 768px) {
+                font-size: 1rem;
+            }
+        }
+
+        &:hover {
+            background-color: $white-color;
+            color: #E4BE8D;
+        }
+
+        &:active {
+            border-color: #E4BE8D;
+        }
+    }
+
+    &__list {
+        width: 100%;
+        height: 85px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        width: 270px / 1170px * 100%;
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 30px;
+        border-top: 4px solid $yellow-color;
+        color: $yellow-color;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 70px / 270px * 100%;
+            height: 4px;
+            background-color: $pink-color;
+            position: absolute;
+            top: -4px;
+            left: 0;
+            z-index: 10;
+            visibility: hidden;
+        }
+
+        &:hover, &:active {
+            color: $white-color;
+            border-color: $white-color;
+            cursor: pointer;
+
+            &::before {
+                visibility: visible;
+            }
+        }
+
+        span {
+            font-family: "Raleway", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.12rem;
+            line-height: 1.31rem;
+            text-transform: uppercase;
+
+            &:first-child {
+                margin-right: 5px;
+                font-size: 2.25rem;
+                font-weight: 700;
+            }
+            
+            
+            @media  screen and (max-width: 576px) {
+                display: none;
+            }
+        }
+    }
+}
