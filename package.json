@@ -1,11 +1,10 @@
 {
   "name": "tms",
   "version": "1.0.0",
-  "description": "",
-  "source": "src/index.html",
+  "source": "index.html",
   "main": "src/js/index.js",
   "scripts": {
-    "start": "parcel src/index.html --open",
+    "start": "parcel index.html --open",
     "build": "parcel build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,5 +23,6 @@
     "browser-sync": "^2.27.9",
     "parcel": "^2.3.2",
     "sass": "^1.49.9"
-  }
+  },
+  "description": ""
 }
