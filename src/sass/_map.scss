@@ -1,0 +1,43 @@
+.map {
+    background-image: linear-gradient(360deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%),
+        url(../img/map-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2.5em 1em;
+
+        @media screen and (max-width: 1024px) {
+            padding: 2em 1em;
+        }
+    }
+
+    &__title {
+        @extend .about__title;
+        margin-bottom: 2.5em;
+        color: $pink-color;
+        margin-bottom: 0.7em;
+
+        @media screen and (max-width: 1024px) {
+            height: 2em;
+            font-size: 1.8rem;
+
+            &:before {
+                width: 5em;
+                bottom: -0.7em;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            height: 4em;
+            &:before {
+                width: 5em;
+                bottom: -0.7em;
+            }
+        }
+    }
+}

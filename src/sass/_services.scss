@@ -4,6 +4,10 @@
         @extend .about__container;
         padding: 2.5em 15px 5em 15px;
         overflow: hidden;
+
+        @media  screen and (max-width: 576px) {
+            padding-bottom: 1.5em;
+        }
     }
 
     &__subtitle {
@@ -34,9 +38,17 @@
         display: flex;
         align-items: flex-start;
 
+        @media  screen and (max-width: 576px) {
+            width: 60%;
+        }
+
         img {
             @media  screen and (max-width: 1024px) {
                 width: 60px;
+            }
+
+            @media  screen and (max-width: 576px) { 
+                width: 52px;
             }
         }
     }

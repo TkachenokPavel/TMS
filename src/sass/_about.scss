@@ -1,5 +1,5 @@
 .about {
-    background-color: $white5-color;;
+    background-color: $white5-color;
 
     &__container {
         padding: 42px 0 106px 0;
@@ -8,27 +8,27 @@
         align-items: center;
         overflow: visible;
 
-        @media  screen and (max-width: 1024px) {
+        @media screen and (max-width: 1024px) {
             padding: 28px 0 58px 0;
         }
     }
 
     &__subtitle {
-        height: 80px;
+        min-height: 80px;
         display: flex;
         align-items: center;
         @extend %ffkau;
         font-size: 1.875rem;
         line-height: 1.6;
 
-        @media  screen and (max-width: 1024px) {
-            height: 67px;
+        @media screen and (max-width: 1024px) {
+            min-height: 67px;
             font-size: 1.5rem;
         }
     }
 
     &__title {
-        height: 80px;
+        min-height: 80px;
         display: flex;
         align-items: center;
         position: relative;
@@ -38,13 +38,13 @@
         line-height: 2.62rem;
         text-transform: uppercase;
 
-        @media  screen and (max-width: 1024px) {
-            height: 67px;
+        @media screen and (max-width: 1024px) {
+            min-height: 67px;
             font-size: 1.5rem;
         }
 
         &::before {
-            content: '';
+            content: "";
             width: 150px;
             height: 4px;
             background-color: $pink-color;
@@ -52,12 +52,17 @@
             bottom: -25px;
             left: 50%;
             transform: translateX(-50%);
+
+            @media screen and (max-width: 576px) {
+                width: 110px;
+                bottom: 0px;
+            }
         }
     }
 
     &__text {
         width: 98%;
-        height: 118px;
+        min-height: 118px;
         margin: 24px 0 58px 0;
         display: flex;
         align-items: center;
@@ -67,11 +72,11 @@
         line-height: 1.31rem;
         color: #000;
 
-        @media  screen and (max-width: 1024px) {
-            height: 100px;
+        @media screen and (max-width: 1024px) {
+            min-height: 100px;
         }
 
-        @media  screen and (max-width: 576px) {
+        @media screen and (max-width: 576px) {
             width: 88%;
         }
     }
@@ -81,30 +86,42 @@
         padding: 0 15px;
         display: flex;
         justify-content: space-between;
+
+        @media screen and (max-width: 576px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 }
 
 .team {
-
     &__item {
         width: 370px / 1200px * 100%;
         background-color: $neptune-color;
         position: relative;
+
+        @media screen and (max-width: 576px) {
+            width: 70%;
+
+            &:not(:last-child) {
+                margin-bottom: 2.5em;
+            }
+        }
     }
 
     &__img {
         background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
-        transition: transform .2s linear;
+        transition: transform 0.2s linear;
 
         &:hover {
             transform: translate(-20px, -20px);
         }
 
-        img{
+        img {
             width: 100%;
 
             &:hover {
-                opacity: .1;
+                opacity: 0.1;
             }
         }
     }
@@ -117,7 +134,7 @@
         z-index: 2;
         transform: translate(0, -50%);
         opacity: 0;
-        transition: opacity .5s linear;
+        transition: opacity 0.5s linear;
 
         @extend %ffral;
         font-weight: 500;
@@ -127,7 +144,7 @@
         text-transform: uppercase;
         color: $white-color;
 
-        @media  screen and (max-width: 576px) {
+        @media screen and (max-width: 576px) {
             font-size: 1rem;
         }
     }
@@ -136,5 +153,3 @@
 .team__item:hover .team__text {
     opacity: 1;
 }
-
-
