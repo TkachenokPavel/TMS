@@ -1,0 +1,84 @@
+.services {
+
+    &__container {
+        @extend .about__container;
+        padding: 2.5em 15px 5em 15px;
+        overflow: hidden;
+
+        @media  screen and (max-width: 576px) {
+            padding-bottom: 1.5em;
+        }
+    }
+
+    &__subtitle {
+        @extend .about__subtitle;
+    }
+
+    &__title {
+        @extend .about__title;
+        margin-bottom: 3em;
+    }
+
+    &__box {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        @media  screen and (min-width: 1133px) {
+            row-gap: 9em;
+        }
+
+    }
+
+    &__card {
+        width: 370px / 1170px * 100%;
+        min-width: 23em;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: flex-start;
+
+        @media  screen and (max-width: 576px) {
+            width: 60%;
+        }
+
+        img {
+            @media  screen and (max-width: 1024px) {
+                width: 60px;
+            }
+
+            @media  screen and (max-width: 576px) { 
+                width: 52px;
+            }
+        }
+    }
+
+    &__card-content {
+        padding-left: 30px;
+    }
+
+    &__card-content-title {
+        height: 2.1em;
+        display: flex;
+        align-items: center;
+        @extend %ffral;
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 1.15;
+        text-transform: uppercase;
+        text-align: left;
+        color: #2D3033;
+    }
+
+    &__card-content-text {
+        height: 4.7em;
+        display: flex;
+        align-items: center;
+        @extend %ffral;
+        font-weight: 400;
+        font-size: 1.1rem;
+        line-height: 1.1;
+        text-align: left;
+        color: #2D3033;
+    }
+}

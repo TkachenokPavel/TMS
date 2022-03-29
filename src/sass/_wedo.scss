@@ -1,0 +1,157 @@
+.wedo {
+    &__container {
+        @extend .about__container;
+        padding: 2.5em 15px 5em 15px;
+        overflow: hidden;
+
+        @media screen and (max-width: 576px) {
+            padding-bottom: 3.5em;
+        }
+    }
+
+    &__subtitle {
+        @extend .about__subtitle;
+    }
+
+    &__title {
+        @extend .about__title;
+    }
+
+    &__text {
+        @extend .about__text;
+        margin-bottom: 2.3em;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 576px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__img {
+        width: 570px / 1170px * 100%;
+
+        @media screen and (max-width: 1024px) {
+            height: 80%;
+        }
+
+        @media screen and (max-width: 576px) {
+            width: 90%;
+            margin-bottom: 1em;
+        }
+    }
+
+    &__accordion {
+        width: 570px / 1170px * 100%;
+
+        @media screen and (max-width: 576px) {
+            width: 90%;
+        }
+
+        input {
+            display: none;
+
+            &:checked {
+                & + label {
+                    & + .accordion__body {
+                        display: block;
+                        padding: 0.9em 5em 0.9em 0.9em;
+                        margin-bottom: 1.5em;
+
+                        @media screen and (max-width: 1024px) {
+                            padding-right: 0.9em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.accordion {
+    &__body {
+        display: none;
+        overflow: hidden;
+        border: 1px solid $grey-color;
+        border-top: none;
+        margin-top: -1.3em;
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.12rem;
+        line-height: 1.15;
+        color: #2d3033;
+
+        @media screen and (max-width: 1024px) {
+            padding-right: 0.9em;
+        }
+    }
+
+    &__item1 {
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 0.7em;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 3.9em;
+        border: 1px solid $grey-color;
+        @extend %ffral;
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        text-transform: uppercase;
+        color: #2d3033;
+        text-align: left;
+
+        @media screen and (max-width: 1024px) {
+            height: 3.1em;
+            font-size: 1.2rem;
+        }
+
+        &::before {
+            content: "";
+            width: 42px;
+            height: 42px;
+            margin: 0 1.7em 0 0.7em;
+            background: url(../img/wedo/icon1.svg) center center no-repeat;
+            background-size: cover;
+
+            @media screen and (max-width: 1024px) {
+                height: 35px;
+                width: 35px;
+            }
+        }
+
+        &::after {
+            content: "\276F";
+            position: absolute;
+            right: 2em;
+            top: 1.2em;
+            transform: rotate(90deg);
+
+            @media screen and (max-width: 1024px) {
+                top: 0.8em;
+            }
+        }
+    }
+
+    &__item2 {
+        @extend .accordion__item1;
+
+        &::before {
+            background: url(../img/wedo/icon2.svg) center center no-repeat;
+        }
+    }
+
+    &__item3 {
+        @extend .accordion__item1;
+
+        &::before {
+            background: url(../img/wedo/icon3.svg) center center no-repeat;
+        }
+    }
+}

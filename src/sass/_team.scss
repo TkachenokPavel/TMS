@@ -1,0 +1,123 @@
+.team {
+
+    &__container {
+        @extend .about__container;
+        padding: 5em 1em;
+
+        @media screen and (max-width: 576px) {
+            padding: 2em 1em;
+        }
+    }
+
+    &__subtitle {
+        @extend .about__subtitle;
+    }
+
+    &__title {
+        @extend .about__title;
+    }
+
+    &__desc {
+        @extend .about__text;
+        margin-bottom: 2.3em;
+    }
+
+    &__card-box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 576px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+.team-card {
+
+    &__container {
+        width: 370px / 1170px * 100%;
+
+        @media screen and (max-width: 576px) {
+            width: 85%;
+            margin-bottom: 2em;
+        }
+    }
+
+    &__img {
+        position: relative;
+
+        img {
+            display: block;
+            width: 100%;
+        };
+
+        &:hover {
+            cursor: pointer;
+
+            .team-card__img-socials {
+                opacity: 1;
+            }
+
+            &::before {
+                transform: translate(-20px, -20px);
+                transition: transform 0.3s linear;
+                opacity: 1;
+            }
+        }
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+            opacity: 0;
+
+            @media screen and (max-width: 576px) {
+                display: none;
+            }
+        }
+    }
+
+    &__img-socials {
+        display: flex;
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        transform: translate(50%, 50%);
+        z-index: 2;
+        opacity: 0;
+
+        @media screen and (max-width: 576px) {
+            bottom: 0;
+            right: 0;
+            transform: none;
+            opacity: 1;
+        }
+    }
+
+    &__name {
+        margin: 1.1em 0;
+        @extend %ffral;
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 1.15;
+        text-align: center;
+        text-transform: uppercase;
+        color: #2D3033;
+    }
+
+    &__profession {
+        @extend %ffral;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1.2;
+        text-align: center;
+        text-transform: uppercase;
+        color: #2D3033;
+
+    }
+}

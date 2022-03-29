@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@700&family=Raleway:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,400;1,500&display=swap');
+
+:root {
+    font-size: 16px;
+
+    @media  screen and (max-width: 1024px) {
+        font-size: 14px;
+    }
+}
+
+%ffral {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    text-align: center;
+    color: #2D3033;
+}
+
+%ffkau {
+    font-family: 'Kaushan Script', cursive;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    color: #2D3033;
+}
