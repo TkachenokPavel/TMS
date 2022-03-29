@@ -1,6 +1,6 @@
 .design {
     min-height: 868px;
-    background: url(../img/design-bg.jpg);
+    background: url(../src/img/design-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,7 +57,7 @@
     }
 
     &__ipad{
-        background-image: url(../img/design/ipad-border.png),url(../img/design/ipad.png);
+        background-image: url(../src/img/design/ipad-border.png),url(../src/img/design/ipad.png);
         background-repeat: no-repeat, no-repeat, no-repeat;
         background-position:  center;
         position: relative;
@@ -67,19 +67,19 @@
         z-index: 20;
 
         @media  screen and (max-width: 1024px) {
-            background-image: url(../img/design/ipad-border1024.png),url(../img/design/ipad1024.png);
+            background-image: url(../src/img/design/ipad-border1024.png),url(../src/img/design/ipad1024.png);
             min-height: 400px;
         }
 
         @media  screen and (max-width: 576px) {
-            background-image: url(../img/design/ipad-border320.png),url(../img/design/ipad320.png);
+            background-image: url(../src/img/design/ipad-border320.png),url(../src/img/design/ipad320.png);
             min-height: 270px;
             margin-bottom: 1em;
         }
     }
 
     &__iphone{
-        background-image: url(../img/design/iphone-border.png),url(../img/design/iphone.png);
+        background-image: url(../src/img/design/iphone-border.png),url(../src/img/design/iphone.png);
         background-repeat: no-repeat, no-repeat, no-repeat;
         background-position: center top;
         position: absolute;
@@ -90,14 +90,14 @@
         max-width: 200px;
 
         @media  screen and (max-width: 1024px) {
-            background-image: url(../img/design/iphone-border1024.png),url(../img/design/iphone1024.png);
+            background-image: url(../src/img/design/iphone-border1024.png),url(../src/img/design/iphone1024.png);
             right: 200px / 1170px * 100%;
             bottom: -20px;
             height: 290px;
         }
 
         @media  screen and (max-width: 576px) {
-            background-image: url(../img/design/iphone-border320.png),url(../img/design/iphone320.png);
+            background-image: url(../src/img/design/iphone-border320.png),url(../src/img/design/iphone320.png);
             height: 180px;
             right: 7%;
         }

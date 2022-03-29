@@ -229,7 +229,7 @@ span {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    position: absolute;
+    position: fixed;
     top: 25px;
     right: 25px;
     width: 26px;
@@ -309,8 +309,8 @@ span {
 
 .banner {
   min-height: 1024px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(237, 215, 137, 0.9)), to(rgba(233, 130, 131, 0.9))), url(../img/header-banner.jpg);
-  background-image: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%), url(../img/header-banner.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(237, 215, 137, 0.9)), to(rgba(233, 130, 131, 0.9))), url(../src/img/header-banner.jpg);
+  background-image: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%), url(../src/img/header-banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1022,7 +1022,7 @@ span {
 
 .design {
   min-height: 868px;
-  background: url(../img/design-bg.jpg);
+  background: url(../src/img/design-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1083,7 +1083,7 @@ span {
 }
 
 .design__ipad {
-  background-image: url(../img/design/ipad-border.png), url(../img/design/ipad.png);
+  background-image: url(../src/img/design/ipad-border.png), url(../src/img/design/ipad.png);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center;
   position: relative;
@@ -1095,21 +1095,21 @@ span {
 
 @media screen and (max-width: 1024px) {
   .design__ipad {
-    background-image: url(../img/design/ipad-border1024.png), url(../img/design/ipad1024.png);
+    background-image: url(../src/img/design/ipad-border1024.png), url(../src/img/design/ipad1024.png);
     min-height: 400px;
   }
 }
 
 @media screen and (max-width: 576px) {
   .design__ipad {
-    background-image: url(../img/design/ipad-border320.png), url(../img/design/ipad320.png);
+    background-image: url(../src/img/design/ipad-border320.png), url(../src/img/design/ipad320.png);
     min-height: 270px;
     margin-bottom: 1em;
   }
 }
 
 .design__iphone {
-  background-image: url(../img/design/iphone-border.png), url(../img/design/iphone.png);
+  background-image: url(../src/img/design/iphone-border.png), url(../src/img/design/iphone.png);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center top;
   position: absolute;
@@ -1122,7 +1122,7 @@ span {
 
 @media screen and (max-width: 1024px) {
   .design__iphone {
-    background-image: url(../img/design/iphone-border1024.png), url(../img/design/iphone1024.png);
+    background-image: url(../src/img/design/iphone-border1024.png), url(../src/img/design/iphone1024.png);
     right: 17.09402%;
     bottom: -20px;
     height: 290px;
@@ -1131,7 +1131,7 @@ span {
 
 @media screen and (max-width: 576px) {
   .design__iphone {
-    background-image: url(../img/design/iphone-border320.png), url(../img/design/iphone320.png);
+    background-image: url(../src/img/design/iphone-border320.png), url(../src/img/design/iphone320.png);
     height: 180px;
     right: 7%;
   }
