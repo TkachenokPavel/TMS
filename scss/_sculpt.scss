@@ -1,0 +1,103 @@
+.sculpt {
+    background-color: #CFC7C0;
+
+    &__container {
+        display: flex;
+        padding: 0;
+    }
+
+    &__empty {
+        background: url(../img/sculpt/sculpt-bg.jpg) center center no-repeat;
+        background-size: cover;
+        width: 50%;
+    }
+
+    &__content {
+        width: 50%;
+        position: relative;
+    }
+
+    &__link {
+        position: absolute;
+        right: 40px;
+        top: 40px;
+        border-bottom: 1px solid transparent;
+
+        @extend %ffrob;
+        font-size: 1rem;
+        line-height: 1.2;
+        color: #333333;
+
+        &:hover {
+            border-color: #333333;
+        }
+    }
+}
+.body-sculpt {
+    display: flex;
+    justify-content: space-between;
+    margin: 10.5em 2.5em;
+
+    &__content {
+        width: 400px / 640px * 100%;
+    }
+
+    &__title {
+        margin-bottom: 0.7em;
+        @extend %ffrob;
+        font-size: 1.75rem;
+        line-height: 1.4;
+    }
+
+    &__subtitle {
+        margin-bottom: 1.25em;
+        @extend %ffrob;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    &__text {
+        margin-bottom: 1.85em;
+        @extend %ffrob;
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+
+    &__btn-dark {
+        width: 100%;
+        height: 60px;
+        margin-bottom: 1.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333333;
+
+        @extend %ffrob;
+        font-size: 0.85rem;
+        line-height: 1;
+        text-align: center;
+        color: #f6f5e8;
+    }
+
+    &__btn-light {
+        position: relative;
+        @extend .body-sculpt__btn-dark;
+        background-color: transparent;
+        border: 1px solid #333333;
+        @extend %ffrob;
+        font-size: 0.85rem;
+        line-height: 1.4;
+        text-align: center;
+        color: #333333;
+
+        &::after {
+            position: absolute;
+            content: "→";
+            width: 24px;
+            height: 24px;
+            top: 50%;
+            right: 25px;
+            transform: translateY(-50%);
+        }
+    }
+}
